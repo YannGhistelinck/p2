@@ -257,3 +257,26 @@ SECTION + ASIDE
     FOOTER
 *********************************************
 */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    padding-top: 30px;
+    padding-bottom: 45px;
+
+    background-color: #F2F2F2;
+
+}
+footer ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color : black;
+}
