@@ -11,6 +11,10 @@ body{
 h1{
     font-size : 22px;
 }
+a{
+    text-decoration: none;
+    color : black;
+}
 /*
 *********************************************
     HEADER
@@ -42,10 +46,6 @@ nav li {
     padding : 10px;
     padding-top : 25px ; 
 }
-nav a{
-    text-decoration: none;
-    color : black;
-}
 nav a:hover{
     color : #0065FC;
     border-top : 1px solid #0065FC;
@@ -65,6 +65,7 @@ nav span:hover{
 
 .banner{
     margin-left: 55px;
+    margin-bottom: 50px;
 }
 
 
@@ -176,13 +177,14 @@ SECTION + ASIDE
 */
 
 
-/*
+
 .bigbox{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    margin-bottom: 50px;
 }
 .bigbox section, aside{
     background-color: #F2F2F2;
@@ -199,42 +201,48 @@ SECTION + ASIDE
     justify-content : space-between;
 }
 .host_box{
-    display : flex;
-    flex-direction: row;
-    flex-wrap:wrap ;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap : 30px;
+
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.host_card{
+    border : 5px solid white;
     background-color: white;
     border-radius: 20px;
 }
-.host_box a{
-    text-decoration: none;
-    color : black;
-}
 .host_card img{
-    border : 5px solid white;
     border-radius: 20px 20px 0px 0px;
-    width : 246px;
+    /*width : 246px;*/
+    width: 100%;
+    max-height: 124px;
 }
-*/
+.host_card div, h3, p{
+    padding-left: 16px;
+}
+
 
 
 
 /* Les + populaires*/
-/*
+
 .popular_card{
     display: flex;
     flex-direction: row;
     background-color: white;
     border-radius: 20px;
+    margin-bottom: 35px;
 }
 .popular_card img{
     width : 137px;
+    height : 144px;
     border-radius: 20px 0px 0px 20px;
     border : 5px solid white;
 }
-.popular_content{
-    padding-left : 15px;
-}
-*/
+
+
 
 
 /*
@@ -274,9 +282,4 @@ footer{
 footer ul{
     list-style-type: none;
     padding-left: 0px;
-}
-
-footer a{
-    text-decoration: none;
-    color : black;
 }
