@@ -7,10 +7,25 @@ body{
     font-family: Raleway;
     max-width : 1440px;
     margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left : 3.5%;
+    margin-right : 3.5%;
 }
 h1{
     font-size : 22px;
+    font-weight: 700;
 }
+h2{
+    font-size: 22px;
+}
+h3, p{
+    padding-left: 16px;
+    font-size: 16px;
+}
+h3{
+    line-height: 19px;
+}
+
 a{
     text-decoration: none;
     color : black;
@@ -27,35 +42,29 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top : 10px;
-    position: relative;
-    top : -24px;
+    padding-top : 30px;
+    margin-bottom: 50px;
 }
 .logo{
-    height : 19px;
-    margin-left: 55px;
+    height : 20px;
 }
-nav ul{
+nav ul{ 
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    margin-right: 40px;
 }
 nav li {
-    margin : 20px;
-    padding : 10px;
-    padding-top : 25px ; 
+    padding-top : 9px ; 
 }
 nav a:hover{
     color : #0065FC;
-    border-top : 1px solid #0065FC;
-}
-nav span:hover{
     border-top : 2px solid #0065FC;
-    position: relative;
-    top : -2px;
 }
-
+nav a{
+    padding-left : 30px;
+    padding-right: 30px;
+    padding-top : 53px;
+}
 /*
 *********************************************
     BANNER
@@ -64,12 +73,14 @@ nav span:hover{
 
 
 .banner{
-    margin-left: 55px;
     margin-bottom: 50px;
+}
+.banner p, h1{
+    padding-left : 0px;
 }
 
 
-/* Barre de recherche */
+/* Search Form */
 
 
 .banner form{
@@ -77,6 +88,8 @@ nav span:hover{
     flex-direction : row;
     align-items: center;
     margin-bottom: 30px;
+
+    
 }
 
 .button_location{
@@ -95,9 +108,9 @@ input{
     border : 1px solid #F2F2F2;
     color : black;
     text-align: center;
+    font-size: 18px;
 }
 button{
-    width: 132px;
     height: 49px;
     background-color: #0065FC;
     padding : 15px 16px 15px 16px;
@@ -106,10 +119,21 @@ button{
     border : none;
     position :relative;
     left : -1px;
+
+    display: flex;
+    align-items: center;
+    cursor : pointer;
+}
+button span{
+    font-size: 18px;
+}
+.fa-magnifying-glass{
+    display : none;
+    padding-right: 10px;
 }
 
 
-/* Filtres */
+/* Filters */
 
 
 .filter_container{
@@ -156,9 +180,9 @@ button{
     align-items: center;
 }
 .info_banner i{
-    width : 24px;
-    height: 24px;
-    margin-right : 8px;
+    width : 25px;
+    height: 25px;
+    margin-right: 8px;
     border-radius: 50px;
     border : 2px solid #D9D9D9;
     color :#0065FC;
@@ -181,10 +205,12 @@ SECTION + ASIDE
 .bigbox{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 40px;
-    padding-left: 3.5%;
-    padding-right: 3.5%;
+    gap: 2.5%;
     margin-bottom: 50px;
+}
+.bigbox p{
+    font-size: 14px;
+    line-height: 8px;
 }
 .bigbox section, aside{
     background-color: #F2F2F2;
@@ -215,13 +241,11 @@ SECTION + ASIDE
 }
 .host_card img{
     border-radius: 20px 20px 0px 0px;
-    /*width : 246px;*/
     width: 100%;
-    max-height: 124px;
+    height: 124px;
+    object-fit: cover;
 }
-.host_card div, h3, p{
-    padding-left: 16px;
-}
+
 
 
 
@@ -240,7 +264,16 @@ SECTION + ASIDE
     height : 144px;
     border-radius: 20px 0px 0px 20px;
     border : 5px solid white;
+    object-fit: cover;
 }
+.popular_content{
+    padding-right : 16px;
+    display : flex ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 
 
 
@@ -252,8 +285,6 @@ SECTION + ASIDE
 */
 
 .activity{
-    margin-left: 3.5%;
-    margin-right: 3.5%;
     margin-bottom: 50px;
 }
 
@@ -271,6 +302,10 @@ SECTION + ASIDE
     width: 100%;
     height: 390px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+.activity h3{
+    padding-bottom : 20px;
 }
 
 
@@ -284,19 +319,19 @@ SECTION + ASIDE
 */
 
 footer{
+    height: 225px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap : 16%;
 
-    margin-left: 3.5%;
-    margin-right: 3.5%;
-    padding-top: 30px;
-    padding-bottom: 45px;
+    padding: 45px;
+    padding-left: 75px;
 
     background-color: #F2F2F2;
-
 }
-footer ul{
-    list-style-type: none;
-    padding-left: 0px;
+.title_footer{
+    margin-bottom: 25px;
+    padding-left: 16px;
+    font-size: 18px;
+    font-weight: bold;
 }
